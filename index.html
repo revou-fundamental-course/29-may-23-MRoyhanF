@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TEST REVOU</title>
+     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+     <!-- header / navbar -->
+     <header class="header">
+               <nav class="navbar">
+                    <img src="./assets/foto/logo.png"
+                    class="logo">
+                    <div>
+                         <a href="" class="menu">Home</a>
+                         <a href="" class="menu">Our Profile</a>
+                         <a href="" class="menu">Achievment</a>
+                         <a href="" class="menu">Message Us</a>
+                    </div>
+               </nav>
+     </header>
+     
+     <!--Content -->
+     <main>
+          <div class="container">
+               <section id="hero">
+                    <h1 class="hero-title">Hi Royhan, welcome to Homepage</h1>
+                    <p class="hero-paragraf">Ini Website Latihan Pertama</p>
+                    <img 
+                    class="hero-img"
+                    src="https://source.unsplash.com/random/1080x400?landscape&sig=1">
+                    <hr>
+               </section>
+               <section id="facilitation">
+                    <h1 class="facil-tille">Our Facilitaion</h1>
+                    <div class="facil-list">
+                         <div>
+                              <img 
+                              class="facil-img"
+                              src="https://source.unsplash.com/random/500x500?landscape&sig=1" alt=""
+                              >
+                              <p class="facil-paragraf">Hallo</p>
+                         </div>
+                         <div>
+                              <img 
+                              class="facil-img"
+                              src="https://source.unsplash.com/random/500x500?landscape&sig=2" alt=""
+                              >
+                              <p class="facil-paragraf">Hallo</p>
+                         </div> <div>
+                              <img 
+                              class="facil-img"
+                              src="https://source.unsplash.com/random/500x500?landscape&sig=3" alt=""
+                              >
+                              <p class="facil-paragraf">Hallo</p>
+                         </div>
+                    </div>
+                    <br>
+                    <hr>
+               </section>
+               <section id="message">
+                    <form name="message-form" onsubmit="return validateForm()">
+                         <table>
+                              <tr>
+                                   <th>Nama :</th>
+                                   <td><input placeholder="name" type="text" name="full-name" required></td>
+                              </tr>
+                              <tr>
+                                   <th>Tanggal Lahir :</th>
+                                   <td><input type="date" name="birth-date"></td>
+                              </tr>
+                              <tr>
+                                   <th>Jenis Kelamin Aku :</th>
+                                   <td><input type="radio" id="male" name="gender" value="laki-laki" required>
+                                        <label for="male">Laki-laki</label>
+                                        <input type="radio" id="female" name="gender" value="Perempuan" required>
+                                        <label for="female">Perempuan</label>
+                                        <input 
+                                        type="radio"
+                                        id="non-binary"
+                                        name="gender"
+                                        value="Non Binary">
+                                        <label for="non-binary">Non Binary</label></td>
+                              </tr>
+                              <tr>
+                                   <th>Pesan :</th>
+                                   <td><textarea placeholder="pesan" name="message" required></textarea></td>
+                              </tr>
+                         </table>
+                         <br>
+        
+                         <input type="submit" value="Submit" class="submit">
+                    </form> 
+                    <br><hr><br>
+                    <div class="form-output">
+                         <table>
+                              <tr>
+                                   <th>Nama </th>
+                                   <td><span id="sender-full-name"></span></td>
+                              </tr>
+                              <tr>
+                                   <th>Tanggal Lahir</th>
+                                   <td><span id="sender-birth-date"></span></td>
+                              </tr>
+                              <tr>
+                                   <th>Jenis Kelamin</th>
+                                   <td><span id="sender-gender"></span></td>
+                              </tr>
+                              <tr>
+                                   <th>Pesan</th>
+                                   <td><span id="sender-message"></span></td>
+                              </tr>
+                         </table>
+                    </div>    
+               </section>
+          </div>
+          
+     </main>
+
+     <!-- footer -->
+     <footer>
+          <div class="footer">
+               <h3> By. Muhamad Royhan Fadhli</h3>
+          </div>
+     </footer>
 </body>
+<script src="./js/app.js"></script>
 </html>
